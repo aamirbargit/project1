@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"> <!-- link to css styling sheet -->
+        <link rel="stylesheet" href="styles.css">
+        <title>Track Page</title>
+    </head>
+<body>
+    <div class="nav-container">
+        <nav class="navbar">  <!-- nav container -->
+            <h1 id="navbar-logo">SPENDR</h1>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-links">Home</a></li>
+                <li><a href="track.html" class="nav-links">Track</a></li>
+                <li><a href="aboutus.html" class="nav-links">About Us</a></li>
+                <li><a href="contactus.html" class="nav-links">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="nav.js"></script> 
+    <div class="budget-container"> <!-- where all of the budget tracker will go  -->
+        <div class="app-title">
+            <a href="">SPENDR Money-Tracker</a> <!-- budget tracker name at the top of the screen -->
+        </div>
+        <div class="budget-header"> 
+            <div class="balance">
+                <div class="title">
+                    Balance <!-- balance for current amount of money  -->
+                </div>
+                <div class="value">
+                    <small>£</small>0 <!-- current number value of income minus expense -->
+                </div>
+            </div>
+            <div class="account">
+                <div class="income">
+                    <div class="title">
+                        Income
+                    </div>
+                    <div class="income-total"> <!-- income total which can be changed -->
+                        <small>£</small>0
+                    </div>
+                </div>
+                <div class="chart"></div> <!-- javascript chart to display graphic for amount of income and outcome -->
+                <div class="outcome">
+                    <div class="title">
+                        Expense
+                    </div>
+                    <div class="outcome-total"> <!-- expense total which can be changed-->
+                        <small>£</small>0
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="budget-dashboard"> <!-- budget dashboard area  -->
+            <div class="dash-title">Dashboard</div>
+            <div class="toggle">
+                <div class="tab1">Expenses</div> <!-- tab for expense can be toggled can be activated/toggled-->
+                <div class="tab2">Income</div> <!-- tab for income can be toggled can be activated/toggled -->
+                <div class="tab3 active">All</div> <!-- tab for all can be toggled. active means this one is currently selected -->
+            </div>
+            <div class="hide" id="income"> <!-- income is currently hidden toggle -->
+                <ul class="list"></ul>
+                <div class="input"> <!-- input div where entrys will be added -->
+                    <input type="text" id="income-title-input" name="title" placeholder="Title"> <!-- input title is name of income or expense text only-->
+                    <input type="number" id="income-amount-input" name="amount" placeholder="£0">  <!-- amount input is the number for the income/expense number only -->
+                    <div class="add-income"><img src="icon/plus.png" alt=""></div> <!-- add income adds entry to the list. -->
+                </div>
+            </div>
+            <div class="hide" id="expense"> <!-- outcome is currently hidden toggle -->
+                <ul class="list"></ul>
+                <div class="input">
+                    <input type="text" id="expense-title-input" name="title" placeholder="Title">
+                    <input type="number" id="expense-amount-input" name="amount" placeholder="£0">
+                    <div class="add-expense"><img src="icon/plus.png" alt=""></div>
+                </div>
+            </div>
+            <div id="all">
+                <ul class="list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="chart.js"></script>
+    <script src="budget.js"></script>
+</body>
+</html>

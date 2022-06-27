@@ -1,0 +1,49 @@
+<!DOCTYPE html> <!-- main index html home and landing page -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- google font -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> <!-- google font link -->
+    <link rel="stylesheet" href="style.css"> <!-- link to css styling sheet -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">  <!-- apple icon image link -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">    <!-- 32x32 icon image link -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"> <!-- 16x16 icon image link -->
+    <link rel="manifest" href="/manifest.json"> <!-- manifest javascript file link -->
+    <meta name="theme-color" content="black"/> <!-- n/a -->
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="nav-container"> <!-- div nav container -->
+        <nav class="navbar">  <!-- navigation bar -->
+            <h1 id="navbar-logo">SPENDR</h1>
+            <div class="menu-toggle" id="mobile-menu"> <!--  -->
+                <span class="bar"></span> <!-- shows a bar x3 shown below each other like a hamburger icon -->
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu"> <!-- navigation link names -->
+                <li><a href="index.html" class="nav-links">Home</a></li> <!-- links to html pages and page name -->
+                <li><a href="track.html" class="nav-links">Track</a></li>
+                <li><a href="aboutus.html" class="nav-links">About Us</a></li>
+                <li><a href="contactus.html" class="nav-links">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="main-container"> <!-- nav container -->
+            <div class="main-content"> <!-- page contents -->
+                <h1>Track Your Expenses</h1>
+                <p>SPENDR allows you to track your income and expenses to manage your finances easier.</p>
+                <button class="main-btn"><a href="track.html">Get Started</a></button> <!-- button for page and link -->
+            </div>
+            <div class="main-img-container"> <!-- nav image container -->
+                <img src="images/finance.svg" alt="" id="main-img"> <!-- link to image source -->
+            </div>
+        </div>
+    </div>
+    <script src="nav.js"></script>  <!-- link to nav javascript file for responsiveness -->
+</body>
+</html> <!-- end of html page -->
